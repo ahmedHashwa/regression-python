@@ -134,6 +134,6 @@ indecis = np.argsort(etr.feature_importances_)[::-1]
 plt.figure(num=None, figsize=(14, 10), dpi=80, facecolor='w')
 plt.title("Feature importances")
 plt.bar(range(X_train.shape[1]), etr.feature_importances_[indecis],
-       color="r", align="center")
+        color="r", align="center")
 plt.xticks(range(X_train.shape[1]), indecis)
 plt.show()
